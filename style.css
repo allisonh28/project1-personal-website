@@ -8,11 +8,12 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Shadows Into Light', cursive;
 }
 h1 {
-    font-size: larger;
+    font-size: 60px;
+    font-weight: bold;
     color: 231B4B;
 }
 h2 {
-    font-size: large;
+    font-size: 30px;
     color: white;
 }
 
@@ -21,5 +22,55 @@ p {
 }
 
 .container {
-
+    align-items: center;
 }
+
+.container-right {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+}
+.container-left {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+.circular-image {
+    width: 250px;  /* Set the width/height to your desired size */
+    height: 250px;
+    border-radius: 50%;  /* This creates the circle shape */
+    overflow: hidden;  /* This hides anything outside the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circular-image img {
+    width: 170%;
+    height: 170%;
+    object-fit: cover;  /* This ensures the image fills the container */
+  }
+
+  .circular-btn {
+    width: 200px;
+    height: 200px;
+    background-color: A5AEED;
+    font-size: 28;
+    font-family: "Playfair Display", serif;
+    border: none;
+    border-radius: 50%;
+    padding:20px;
+    margin: 50px;
+    cursor: pointer;
+    display: flex;              /* Use flexbox to center the text */
+    justify-content: center;    /* Horizontally center the text */
+    align-items: center;        /* Vertically center the text */
+    transition: background-color 0.3s ease; 
+  }
+
+  .goHome {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+  }
