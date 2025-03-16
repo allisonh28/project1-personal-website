@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     font-size: 60px;
     font-weight: bold;
-    color: 231B4B;
+    color: #231B4B;
 }
 h2 {
     font-size: 30px;
@@ -22,18 +22,10 @@ p {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     align-items: center;
-}
-
-.container-right {
-    position: absolute;
-    left: 50%;
-    top: 30%;
-}
-.container-left {
-    position: absolute;
-    left: 15%;
-    top: 20%;
 }
 
 .circular-image {
@@ -52,21 +44,27 @@ p {
     object-fit: cover;  /* This ensures the image fills the container */
   }
 
-  .circular-btn {
-    width: 200px;
-    height: 200px;
-    background-color: A5AEED;
-    font-size: 28;
+  .circles {
+    width: 160px;
+    height: 160px;
+    background-color: #A5AEED;
+    font-size: 32;
     font-family: "Playfair Display", serif;
-    border: none;
+    border-style: solid;
+    border-color: #231B4B;
     border-radius: 50%;
     padding:20px;
-    margin: 50px;
+    margin: 30px;
     cursor: pointer;
     display: flex;              /* Use flexbox to center the text */
     justify-content: center;    /* Horizontally center the text */
     align-items: center;        /* Vertically center the text */
     transition: background-color 0.3s ease; 
+  }
+
+  .circles:hover {
+    transform: translateY(-8px);
+    background-color: #8F9CF6;
   }
 
   .goHome {
