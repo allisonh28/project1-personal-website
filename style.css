@@ -27,6 +27,24 @@ p {
     position: relative;
     align-items: center;
 }
+.info-btn {
+    padding: 10px 20px;
+    background-color: #A5AEED;
+    color: #231B4B;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    width: 400px;
+    height: 25px;
+    background-color: #A5AEED;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+
+}
+.info-btn:hover {
+    transform: translateY(-8px);
+    background-color: white;
+}
 
 .circular-image {
     width: 250px;  /* Set the width/height to your desired size */
@@ -66,9 +84,32 @@ p {
     transform: translateY(-8px);
     background-color: #8F9CF6;
   }
+  /* Projects buttons (bigger squares that link to my vitamins) */
+  .project-btn {
+    width: 350;
+    height: 200;
+    padding: 10px 20px;
+    background-color: #A5AEED;
+    color: #231B4B;
+    font-family: "Playfair Display", serif;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    background-color: #A5AEED;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    align-items: center;
+  }
 
   .goHome {
     position: fixed;
     top: 15px;
     left: 15px;
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    color: black;
+  }
+  .goHome:hover {
+    background-color: #8F9CF6;
   }
