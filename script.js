@@ -43,6 +43,6 @@ document.getElementById("v4").addEventListener('click', () => {
 });
 
 /* Button to go back to home page */
-document.getElementsByClassName("goHome").addEventListener('click', () => {
+document.getElementsById("home").addEventListener('click', () => {
     window.location.href = "index.html";
 });
